@@ -96,33 +96,3 @@ HashTable.prototype.remove = function(k) {
  * Complexity: What is the time complexity of the above functions?
  */
 
-
-Map()
-  }
-};
-
-HashTable.prototype.insert = function(k, v) {
-  var index = getIndexBelowMaxForKey(k, this._limit);
-  return this._storage[index].set(k,v)
-};
-
-HashTable.prototype.retrieve = function(k) {
-  var index = getIndexBelowMaxForKey(k, this._limit);
-  return this._storage[index].get(k)
-};
-
-HashTable.prototype.remove = function(k) {
-  var index = getIndexBelowMaxForKey(k, this._limit);
-  var removed = this.retrieve(k)
-  this._storage[index].delete(k)
-  return removed;
-};
-
-
-
-/*
- * Complexity: What is the time complexity of the above functions?
- */
-
-
-
